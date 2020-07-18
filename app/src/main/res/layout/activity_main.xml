@@ -30,8 +30,11 @@
 
         <ScrollView
             android:id="@+id/bio_scroll"
+            style="@style/NameStyle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/layout_padding"
+            android:paddingEnd="@dimen/layout_padding">
 
             <TextView
                 android:id="@+id/bio_text"
@@ -39,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="TextView" />
+                android:lineSpacingMultiplier="1.2"
+                tools:text="@string/bio" />
         </ScrollView>
     </LinearLayout>
 
