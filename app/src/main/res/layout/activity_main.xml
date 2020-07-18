@@ -35,9 +35,11 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/textview"
             android:textAlignment="center"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:paddingBottom="@dimen/small_padding"/>
 
         <Button
             android:id="@+id/done_button  "
