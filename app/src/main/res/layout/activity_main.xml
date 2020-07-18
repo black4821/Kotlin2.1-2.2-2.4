@@ -30,6 +30,15 @@
             android:inputType="textPersonName"
             android:autofillHints="" />
 
+        <TextView
+            android:id="@+id/nickname_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
         <Button
             android:id="@+id/done_button  "
             style="@style/Widget.AppCompat.Button.Colored"
