@@ -1,6 +1,7 @@
 package com.example.homework
 
 import android.content.Context
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -8,6 +9,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+//import com.example.android.aboutme.databinding.ActivityMainBinding
+import com.example.homework.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +24,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.nickname_text).setOnClickListener {
             updateNickname(it)
         }
-
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
     }
+
+    private lateinit var binding: ActivityMainBinding
+
     private fun addNickname(view: View) {
         val editText = findViewById<EditText>(R.id.nickname_edit)
         val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
